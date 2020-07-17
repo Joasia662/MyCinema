@@ -1,0 +1,47 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a href="" class="navbar-brand text-white">
+        Cinema Booking Application
+    </a>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">LogOut</button>
+  </nav>
+
+  <div class="card m-5" style="width:18rem" *ngIf="userDetails">
+    <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">User Details</a>
+        <li class="list-group-item"><strong>Username : </strong>{{userDetails.userName}}</li>
+        <li class="list-group-item"><strong>FullName : </strong>{{userDetails.fullName}}</li>
+        <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li>
+      </ul>
+  </div>
+<br>
+<table class="table table-sm table-dark">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Title</th>
+        <th scope="col">director</th>
+        <th scope="col">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><img src="/assets/img/MoviePosters/movie1.jpg" class="mx-auto d-block" height="200" width="150"></th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="button" class="btn btn-primary btn-lg">Go Next</button>
