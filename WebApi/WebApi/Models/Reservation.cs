@@ -12,8 +12,8 @@ namespace WebApi.Models
        // [Key]
         public long Id {get; set;}
 
-      //  [Key]
-      //  [ForeignKey("Seats")]
+       // [Key]
+       //[ForeignKey("Seats")]
         public int SeatID { get; set; }
 
        // [Key]
@@ -21,7 +21,6 @@ namespace WebApi.Models
         public int UserID { get; set; }
 
        // [Key]
-        //[ForeignKey("Sessions")]
-        public int SessionID { get; set; }
+       public int SessionID { get; set; }
     }
 }

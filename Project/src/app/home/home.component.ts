@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../shared/user.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +11,19 @@ import { UserService } from '../shared/user.service';
 })
 export class HomeComponent implements OnInit {
 userDetails;
+readonly BaseURI = 'http://localhost:63262/api';
+movieList =[];
 
-  constructor(private router: Router, private service: UserService) { }
+  constructor(private router: Router, private service: UserService,private http : HttpClient) { 
+    
+    this.http.get(this.BaseURI +'/movies').toPromise().then( data =>{
+      console.log(data);
+
+      for(let key in data)
+        if (data.hasOwnProperty(key))
+          this.movieList.push(data[key]);
+    });
+  }
 
   ngOnInit(): void {
     this.service.getUserProfile().subscribe(
@@ -28,4 +40,6 @@ userDetails;
     localStorage.removeItem('token');
     this.router.navigate(['/user/login']);
   }
+
+  
 }

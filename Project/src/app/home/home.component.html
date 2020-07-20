@@ -5,43 +5,34 @@
     <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">LogOut</button>
   </nav>
 
+ <br>
+
+
+
+  <div class="card-deck">
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;" *ngFor="let movie of movieList" >
+      <img class="card-img-top" src="/assets/img/movie.jpg" width="1149" height="300" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">This film was directed by {{movie.director}}</p>
+        <p class="card-text"><small class="text-muted">{{movie.year}}</small></p>
+        <button type="button" class="btn btn-info">Choose this movie</button>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <br><br>
   <div class="card m-5" style="width:18rem" *ngIf="userDetails">
     <ul class="list-group">
-        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">User Details</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Reservation Details</a>
         <li class="list-group-item"><strong>Username : </strong>{{userDetails.userName}}</li>
         <li class="list-group-item"><strong>FullName : </strong>{{userDetails.fullName}}</li>
-        <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li>
+        <li class="list-group-item"><strong>Email : </strong>Unknown</li>
+        <li class="list-group-item"><strong>Movie : </strong>Unknown</li>
+        <li class="list-group-item"><strong>Date : </strong>Unknown</li>
+        <li class="list-group-item"><strong>Seat : </strong>Unknown</li>
+        <li class="list-group-item"> <button type="button" class="btn btn-info">Confirm</button></li>
       </ul>
   </div>
-<br>
-<table class="table table-sm table-dark">
-    <thead>
-      <tr>
-        <th scope="col"></th>
-        <th scope="col">Title</th>
-        <th scope="col">director</th>
-        <th scope="col">Year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><img src="/assets/img/MoviePosters/movie1.jpg" class="mx-auto d-block" height="200" width="150"></th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <button type="button" class="btn btn-primary btn-lg">Go Next</button>
