@@ -22,7 +22,9 @@
         <div class="form-group required">
             <label>Password</label>
             <input type="password" class="form-control" formControlName="Password">
-            <label class="text-danger" *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.required">This field is mendatory</label>
+            <label class="text-danger" *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.required">
+                This field is mendatory
+            </label>
             <label class="text-danger" *ngIf="service.formModel.get('Passwords.Password').touched && service.formModel.get('Passwords.Password').errors?.minlength">Minimum 4 characters required</label>
         </div>
 

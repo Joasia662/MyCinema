@@ -21,8 +21,7 @@ readonly BaseURI = 'http://localhost:63262/api';
     }, {validator : this.comparePasswords })
 
   });
-
-
+  
   comparePasswords( fb: FormGroup){
     let confirmPswrdCtrl = fb.get('ConfirmPassword');
 

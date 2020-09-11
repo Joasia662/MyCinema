@@ -1,0 +1,13 @@
+div.card-deck {
+
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.button {
+    margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}

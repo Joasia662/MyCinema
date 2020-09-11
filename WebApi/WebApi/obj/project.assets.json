@@ -9328,11 +9328,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asiac\\Desktop\\Nowy folder\\WebApi\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\asiac\\Desktop\\CinemaProject\\WebApi\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\asiac\\Desktop\\Nowy folder\\WebApi\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\asiac\\Desktop\\CinemaProject\\WebApi\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\asiac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asiac\\Desktop\\Nowy folder\\WebApi\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\asiac\\Desktop\\CinemaProject\\WebApi\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
